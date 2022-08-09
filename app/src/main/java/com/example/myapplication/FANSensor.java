@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FANSensor extends StringRequest {
-    final static private String URL = "http://192.168.201.69:3000/devices/led";
+    final static private String URL = "http://192.168.43.4:3000/devices/led";
     private Map<String, String> parameters;
 
     public FANSensor(String led, Response.Listener<String> listener){

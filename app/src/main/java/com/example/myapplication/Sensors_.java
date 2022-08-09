@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Sensors_ extends StringRequest {
-    final static private String URL = "http://192.168.201.69:3000/devices/device";
+    final static private String URL = "http://192.168.43.4:3000/devices/device";
     private Map<String, String> parameters;
 
     public Sensors_(String sensor, Response.Listener<String> listener){
