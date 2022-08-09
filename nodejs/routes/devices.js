@@ -5,7 +5,7 @@ const Sensors = require("../models/sensors");
 // MQTT Server 접속
 const client = mqtt.connect("mqtt://192.168.201.218");
 //웹에서 rest-full 요청받는 부분(POST)
-router.post("/fan", function (req, res, next) {
+router.post("/led", function (req, res, next) {
   res.set("Content-Type", "text/json");
   if (req.body.flag == "on") {
     // MQTT->fan : 1

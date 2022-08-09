@@ -17,13 +17,6 @@
           console.log(data);
           $(".mqttlist").html(
             "<li>" +
-              "tmp: " +
-              data.tmp +
-              "(" +
-              data.hum +
-              "%)" +
-              "press: " +
-              data.pre +
               data.alt +
               "pm1: " +
               data.pm1 +
@@ -50,7 +43,8 @@
         if (value == "1") var value = "on";
         else if (value == "2") var value = "off";
         $.ajax({
-          url: "http://192.168.201.69:3000/devices/fan",
+          // 자신의 렙탑 ip로 변경
+          url: "http://192.168.201.69:3000/devices/led",
           type: "post",
           data: { flag: value },
           success: ledStatus,
